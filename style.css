@@ -1,0 +1,54 @@
+body{
+    background-color: #fff3f3;
+}
+.vernav_topcard{
+    display: flex;
+    
+}
+.Dashboard_vertical{
+    color:#FFC2C2;
+    
+}
+/* #mynavbar{
+    background-color: #fff3f3 ;
+} */
+.user_dropdown{
+    height: 30px;
+    width: 60px;
+    border: 1px white ;
+    background-color: rgb(233, 232, 231);
+    border-radius: 5px;
+}
+.nav-item{
+    margin-right: 30px;
+}
+.vernav_text{
+    margin-left: 10px;
+}
+.flex-container{
+    display: flex;
+}
+.flex-container-top{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    align-items: stretch;
+}
+.card1,.card2{
+    display: flex;
+    padding: 50px;
+    margin-left: 300px;
+}
+.graph_and_bottomcard{
+    /* background-color: aqua; */
+    display: flex;
+}
+.drop{
+    background-color:#fff3f3;
+    border: 1px solid #fff3f3;
+    border-radius: 5px;
+    padding: 5px;
+}
+.dropdown{
+    padding: 10px;
+}

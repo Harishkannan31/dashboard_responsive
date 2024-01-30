@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- cloudfare cdn for search icon in placeholder -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+  
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)"><img src="logo.svg" style="width:40px;" class="rounded-pill"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <h3>Smile&Pay</h3>
+        </li>
+        <li class="nav-item">
+          <h3>Dashboard</h3>
+        </li>
+      </ul>
+      <form class="d-flex">       
+        <input class="form-control me-2 searchbar" type="search" placeholder=" Search" aria-label="Search" style="font-family:Arial, FontAwesome">
+      </form>
+      <a class="navbar-brand" href="javascript:void(0)"><img src="profile_icon.png" style="width:40px;" class="rounded-pill"></a>
+      <!-- dropdown in navbar -->
+      <select class="user_dropdown">
+        <option>User1</option>
+      </select>
+      <a class="navbar-brand" href="javascript:void(0)"><img src="notification.png" style="width:20px;" class="rounded-pill"></a>
+    </div>
+  </div>
+</nav>
+<!-- vertical nav -->
+<div class="vernav_topcard">
+<div class="d-flex flex-column flex-shrink-0 p-3 text-dark bg-light" style="width: 280px;">
+    <ul class="nav nav-pills flex-column mb-auto">
+        <span >
+            <!-- icons8.com website to find all icons file -->
+            <img src="dashboard.jpg" alt="dashboard_icon" height="20px" width="20px" class="backshade d-inline">
+            <p class="Dashboard_vertical d-inline  vernav_text ">Dashboard</p>
+        </span>
+        <br>
+        <span>
+            <img src="transaction.png" alt="transaction_icon" height="20px" width="20px" class="backshade d-inline">
+            <p class="Transaction d-inline vernav_text">Transaction</p>
+        </span>
+        <br>
+        <span>
+            <img src="payment.png" alt="payment_icon" height="20px" width="20px" class="d-inline">
+            <p class="Payment d-inline vernav_text">Payment</p>
+        </span>
+        <br>
+        <span>
+            <img src="planning.png" alt="planning_icon" height="20px" width="20px" class="d-inline">
+            <p class="Planning d-inline vernav_text">Planning</p>
+        </span>
+        <br>
+        <span>
+            <img src="settings.png" alt="settings_icon" height="20px" width="20px" class="d-inline">
+            <p class="Settings d-inline vernav_text">Settings</p>
+        </span>
+        <br></br>
+        <hr width="250px"/>
+        <br><br>
+        <span>
+            <img src="help.png" alt="help_icon" height="20px" width="20px" class="d-inline ">
+            <p class="help d-inline vernav_text">Help</p>
+        </span>
+        <br>
+        <span>
+            <img src="logout.png" alt="logout_icon" height="20px" width="20px" class="d-inline">
+            <p class="logout d-inline vernav_text">Logout</p>
+        </span>
+        <br>
+    </ul>
+    <!-- vertical nav footer -->
+    <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Found a bug?</h4>
+            <p class="card-text">Report now to us if you find any bugs</p>
+            <button type="button" class="btn" style="background-color: #FFC2C2; width: 220px;">Report</button>
+          </div>
+        </div>
+    </div>
+
+
+    <hr>
+    
+  </div>
+<!-- Top 4 card element -->
+<div class="row container-fluid">
+    <div class="col-12 col-lg-3 col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-body">
+            <img src="balance.png" alt="wallet_icon" height="30px" width="30px">
+            <h4 class="topic-heading">Balance</h4> 
+            <h2 class="topic">$592.323</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-3 col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-body">
+            <img src="Income.png" alt="income_icon" height="30px" width="30px">
+            <h4 class="topic-heading">Income</h4> 
+            <h2 class="topic">$149.513</h2>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div class="col-12 col-lg-3 col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-body">
+            <img src="savings.png" alt="savings_icon" height="30px" width="30px">
+            <h4 class="topic-heading">Savings</h4> 
+            <h2 class="topic">$45.786</h2> 
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-3 col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-body">
+            <img src="expenses.png" alt="expense_icon" height="30px" width="30px">
+            <h4 class="topic-heading">Expenses</h4> 
+            <h2 class="topic">$267.980</h2>
+        </div>
+      </div>
+    </div>
+
+<!-- card area for graph -->
+    <div class="card flex-container">
+        <div class="card-body">
+            <h3 class="d-inline">Money Flow</h3>
+            <span class="dropdown">
+            <select class="d-inline drop">
+                <option data-icon="expenses.png">Expenses</option>
+            </select>
+            <select class="d-inline drop">
+                <option><img src="maturity.png">Maturity</option>
+            </select>
+            </span>
+            <div id="chart">
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    
+</div>   
+
+
+
+
+<!-- bottom  card 1-->
+<div class="row container-fluid">
+    <div class="col-12 col-lg-3 col-md-6 col-sm-12 card1">
+            <div class="text "> 
+                <span >
+                  <h4 class=" d-inline foot_text">Transaction</h4> 
+                  <a href="#" style="text-decoration: none; color: gray;" class="foot_anch"><p class="d-inline " >view all ></p></a>
+                </span>
+                <br>
+                <br>
+                  <span>
+                    <img src="photoshop.png" alt="photoshop_logo" width="50px" height="30px" class="d-inline">
+                    <h5 class="d-inline">Adobe photoshop</h5>
+                    <h6 style="color: red; margin-left: 30px;" class="d-inline">-$52</h6>
+                  </span>
+                  <br>
+                <br>
+                  <span>
+                    <img src="adobe.png" alt="illustrator_logo" width="30px" height="30px" class="d-inline">
+                    <h5 class="d-inline" style="margin-left:10px ;">Sketch</h5>
+                    <h6 style="color: red; margin-left: 145px;" class="d-inline">-$52</h6>
+                  </span>
+            </div> 
+    </div>
+<!-- bottom  card 2-->
+    <div class="col-12 col-lg-3 col-md-6 col-sm-12 card2">
+        <div class="text ">
+          
+            <span >
+              <h4 class=" d-inline foot_text">Planning</h4> 
+              <a href="#" style="text-decoration: none; color: gray;" class="foot_anch"><p class="d-inline ">view all ></p></a>
+            </span>
+            <br>
+            <br>
+              <span>
+                
+                <h5 class="d-inline">Buy a House</h5>
+                <h6 style="color: gray;" class="d-inline">$500/$8000</h6>
+                
+              </span>
+              <br>
+              <br>
+              <div class="progress" style="height:10px">
+                <div class="progress-bar" style="width:10%;"></div>
+              </div>
+
+              <br>
+            
+              <span>
+                
+                <h5 class="d-inline">Visit To Japan</h5>
+                <h6 style="color: gray;" class="d-inline">$4000/$8000</h6>
+                
+              </span>
+              <br>
+              <br>
+              <div class="progress" style="height:10px">
+                <div class="progress-bar" style="width:50%;"></div>
+              </div>
+              
+      
+    </div>
+    </div>
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- to import graph from apexcharts CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.2/apexcharts.min.js" ></script>
+<script src="script.js"></script>
+</body>
+</html>
